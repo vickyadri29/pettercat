@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* For All Files */
+header {
+  padding: 2px 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  background-color: #f8485e;
+}
+/* For All Files */
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #f8485e;
+  text-align: center;
+}
+
+/* Index.php (Header) */
+.title {
+  margin-left: 40px;
+  line-height: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+  text-align: center;
+  transition: 0.4s;
+}
+
+nav ul {
+  margin: 30px 40px;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  padding-left: 25px;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#kotak {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#gallery-result {
+  width: 400px;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+#gallery-result ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.crop {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.crop img {
+  display: flex;
+  justify-content: center;
+}
+
+.jenis-kucing {
+  padding: 5px 0;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price {
+  margin-top: 3px;
+  color: red;
+  font-size: 20px;
+}
+
+.desc {
+  margin: 5px 0;
+  line-height: 23px;
+  width: 400px;
+  height: 80px;
+}
+
+.adopt {
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  background-color: #142f43;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}

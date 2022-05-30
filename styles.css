@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* For All Files */
+header {
+  padding: 2px 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  background-color: #f8485e;
+}
+/* For All Files */
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #f8485e;
+  text-align: center;
+}
+
+/* Index.php (Header) */
+.title {
+  margin-left: 40px;
+  line-height: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+  text-align: center;
+  transition: 0.4s;
+}
+
+nav ul {
+  margin: 30px 40px;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  padding-left: 25px;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Index.php (Content) */
+#content {
+  height: 100vh;
+  display: flex;
+  color: #142f43;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 80px 32px 80px 32px;
+}
+
+#gallery h2 {
+  margin: 0;
+  padding-right: 100px;
+  font-size: 62px;
+}
+
+a .btn1 {
+  color: rgb(255, 255, 255);
+  background: #f8485e;
+  border: #f8485e;
+  border-radius: 5px;
+  width: 150px;
+  height: 45px;
+  margin: 20px 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: "Quicksand", sans-serif;
+}
+
+a .btn1:hover {
+  border: 2px solid #f8485e;
+  color: rgb(46, 45, 45);
+  background: transparent;
+}
+
+#content .cats {
+  width: 550px;
+}
+
+#more {
+  color: #142f43;
+  background-color: rgb(255, 219, 219);
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#more .cats {
+  padding: 40px;
+  width: 500px;
+  margin: 0 40px 0 80px;
+}
+
+#more #viewmore {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#more #viewmore h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 62px;
+}
+
+#more #viewmore p {
+  padding: 0 50px 0 10px;
+  margin-right: 100px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+#about-us {
+  padding: 20px;
+  margin: 50px 100px;
+  height: 100vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about {
+  font-size: 15px;
+  display: flex;
+}
+
+.card {
+  border: 2px solid #f8485e;
+  border-radius: 10px;
+  width: 300px;
+  height: 135px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.card:hover {
+  color: #eee;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 135px;
+  background: rgb(255, 255, 255);
+  z-index: -1;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+/* Hover After : Background */
+.card:hover::after {
+  background: #f8485e;
+  transform-origin: right bottom;
+  transform: translate(10%, 10%) scale(1px);
+  border-radius: 0;
+  border-radius: 10px;
+}
+
+/* hover bulatan */
+.card:hover::before {
+  transform-origin: right bottom;
+  /* move element and  */
+  transform: translate(10%, 10%) scale(0.2);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* File newcat.php dan Edit.php */
+#input {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#input #penginputan {
+  margin: 10px 0 0 70px;
+  padding: 20px 50px;
+  width: 600px;
+  height: 500px;
+  border: solid 2px #142f43;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+[type="number"],
+[type="file"] {
+  width: 150%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: "Quicksand", sans-serif;
+  cursor: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  width: 567px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: "Quicksand", sans-serif;
+  cursor: auto;
+}
+
+textarea,
+input[type="file"] {
+  resize: none;
+}
+
+#input #penginputan h2 {
+  text-align: center;
+}
+
+#input #penginputan input[type="submit"],
+[type="reset"] {
+  width: 80px;
+  height: 30px;
+  margin-right: 20px;
+  border: 1px solid #f8485e;
+  border-radius: 4px;
+  background: #f8485e;
+  color: #eee;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#input #penginputan input[type="submit"]:hover {
+  border: 1px solid #f8485e;
+  background: transparent;
+  color: #142f43;
+}
+
+#input #penginputan input[type="reset"]:hover {
+  border: 1px solid #f8485e;
+  background: transparent;
+  color: #142f43;
+}
+
+#input .cats {
+  padding: 40px;
+  width: 450px;
+}
+
+/* File Data.php */
+.data {
+  margin: 20px 55px;
+}
+
+.tabledata {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #f8485e;
+}
+
+.data .tabledata th {
+  padding: 10px;
+  text-align: center;
+  background-color: #f8485e;
+  color: #eee;
+}
+
+.data .tabledata td {
+  padding: 20px;
+  text-align: center;
+}
+
+.data .tabledata tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#kotak {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#gallery-result {
+  width: 400px;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+#gallery-result ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.crop {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.crop img {
+  display: flex;
+  justify-content: center;
+}
+
+.jenis-kucing {
+  padding: 5px 0;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price {
+  margin-top: 3px;
+  color: red;
+  font-size: 20px;
+}
+
+.desc {
+  margin: 5px 0;
+  line-height: 23px;
+  width: 400px;
+  height: 80px;
+}
+
+.adopt {
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  background-color: #142f43;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
