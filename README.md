@@ -1,2 +1,3 @@
 # pettercat
-a web about adopt cat.
+
+A Website About Adopt Cat
